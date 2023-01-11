@@ -1,31 +1,32 @@
-.menu-trigger button {
+.menu_trigger button {
     padding: 10px;
-    border: 2px solid black;
-    border-radius: 15px;
+    border: 2px solid rgb(30, 27, 27);
+    border-radius: 8px;
     cursor: pointer;
+    background-color: transparent;
+    font-size: 0.9rem;
+    position: relative;
+    transition: .4s linear;
   }
-  
-  .menu-trigger button:hover {
+
+  .menu_trigger button:hover {
     padding: 10px;
-    border: 2px solid black;
-    border-radius: 15px;
     cursor: pointer;
     background-color: black;
     color: #EFEFEF;
-    transition: 1s;
   }
   
-  .drop-menu {
+  .drop_menu {
     position: absolute;
     top: 70px;
     right: 20px;
-    background-color: #fff;
+    background-color: #fff !important;
     border-radius: 15px;
     padding: 10px 20px;
     width: 200px;
   }
   
-  .drop-menu::before {
+  .drop_menu::before {
     content: '';
     position: absolute;
     top: -5px;
@@ -36,59 +37,60 @@
     transform: rotate(45deg);
   }
   
-  .drop-menu.active {
+  .drop_menu.active {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
     transition: 1s ease;
   }
   
-  .drop-menu.inactive {
+  .drop_menu.inactive {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
     transition: 1s ease;
   }
   
-  .drop-menu h3 {
+  .drop_menu h3 {
     width: 100%;
     text-align: center;
     font-size: 18px;
     padding: 20px 0;
   }
   
-  .drop-menu h3 span {
+  .drop_menu h3 span {
     font-size: 14px;
     color: aqua;
     font-weight: 400;
   }
   
-  .drop-menu ul li {
+  .drop_menu ul li {
     padding: 10px 0;
     border-top: 1px solid rgb(0, 0, 0, 0.05);
     list-style: none;
   }
   
-  .drop-menu ul li:hover a{
+  .drop_menu ul li:hover a{
     color: red;
     cursor: pointer;
   }
 
-  .drop-menu ul li a{
+  .drop_menu ul li a{
     background-color: #fff;
     color: rgb(0, 0, 0);
     cursor: pointer;
     text-decoration: none;
+    transition: 0.9s ease;
   }
   
-  .drop-menu ul li a.active{
+  .drop_menu ul li a.active{
     background-color: #fff;
-    color: rgb(115, 58, 58);
+    color: red;
     cursor: pointer;
     text-decoration: none;
   }
 
-  .drop-menu ul li:hover img{
+  .drop_menu ul li:hover img{
     opacity: 1;
     cursor: pointer;
   }

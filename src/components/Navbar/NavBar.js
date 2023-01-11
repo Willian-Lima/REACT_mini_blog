@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import './NavBar.css'
 import DropMenu from './DropMenu';
 
 const NavBar = () => {
@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <nav className='navbar'>
       <div className="logo">
-      <NavLink className="nav-item" to="/" >Mini <span>Blog</span></NavLink>
+      <p>Mini <span>Blog</span></p>
       </div>
       <div className="navbar-end">
         <DropMenu />
