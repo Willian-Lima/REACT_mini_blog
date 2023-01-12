@@ -7,6 +7,7 @@
     font-size: 0.9rem;
     position: relative;
     transition: .4s linear;
+    display: none;
   }
 
   .menu_trigger button:hover {
@@ -17,56 +18,47 @@
   }
   
   .drop_menu {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background-color: #fff !important;
+    position: flex;
+    background-color: transparent;
     border-radius: 15px;
     padding: 10px 10px;
-    width: 200px;
-  }
-  
-  .drop_menu::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    right: 18px;
-    height: 20px;
-    width: 20px;
-    background: #fff;
-    transform: rotate(45deg);
   }
   
   .drop_menu.active {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
-    transition: 1s ease;
   }
   
   .drop_menu.inactive {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-20px);
-    transition: 1s ease;
+    opacity: 1;
+    visibility: visible;
   }
   
   .drop_menu h3 {
     width: 100%;
     text-align: center;
     font-size: 18px;
+    display: none;
   }
   
   .drop_menu h3 span {
     font-size: 14px;
     color: aqua;
     font-weight: 400;
+    display: none;
+  }
+
+  .drop_menu ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
   }
   
   .drop_menu ul li {
-    padding: 10px 0;
-    border-top: 1px solid rgb(0, 0, 0, 0.05);
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0, 0.05);
     list-style: none;
+    border-radius: 5px;
   }
   
   .drop_menu ul li:hover a{
@@ -106,3 +98,123 @@
     transition: 1s;
   }
   
+  @media (max-width: 480px) {
+    .menu_trigger button {
+      padding: 10px;
+      border: 2px solid rgb(30, 27, 27);
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: transparent;
+      font-size: 0.9rem;
+      position: relative;
+      transition: .4s linear;
+      display: block;
+    }
+  
+    .menu_trigger button:hover {
+      padding: 10px;
+      cursor: pointer;
+      background-color: black;
+      color: #EFEFEF;
+    }
+    
+    .drop_menu {
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: #fff !important;
+      border-radius: 15px;
+      padding: 10px 10px;
+      width: 200px;
+    }
+    
+    .drop_menu::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      right: 18px;
+      height: 20px;
+      width: 20px;
+      background: #fff;
+      transform: rotate(45deg);
+    }
+    
+    .drop_menu.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      transition: 1s ease;
+    }
+    
+    .drop_menu.inactive {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-20px);
+      transition: 1s ease;
+    }
+    
+    .drop_menu h3 {
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      display: block;
+    }
+    
+    .drop_menu h3 span {
+      font-size: 14px;
+      color: aqua;
+      font-weight: 400;
+      display: inline;
+    }
+
+    .drop_menu ul {
+      display: block;
+      list-style: none;
+    }
+    
+    .drop_menu ul li {
+      padding: 10px 0;
+      border: 0px;
+      border-top: 1px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0, 0.05);
+      list-style: none;
+    }
+    
+    .drop_menu ul li:hover a{
+      color: red;
+      cursor: pointer;
+    }
+  
+    .drop_menu ul li a{
+      background-color: #fff;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.9s ease;
+    }
+    
+    .drop_menu ul li a.active{
+      background-color: #fff;
+      color: red;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  
+    .drop_menu ul li:hover img{
+      opacity: 1;
+      cursor: pointer;
+    }
+    
+    .dropdownItem {
+      display: flex;
+      margin: 10px auto;
+    }
+    
+    .dropdownItem img{
+      max-width: 20px;
+      margin-right: 10px;
+      opacity: 0.5;
+      transition: 1s;
+    }
+  }
