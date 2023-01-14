@@ -33,6 +33,8 @@ const DropMenu = () => {
           <ul>
             <DropDownItem className={styles.dropdownItem} img={null} text={"Home"} link={"/"} />
             <DropDownItem className={styles.dropdownItem} img={null} text={"Sobre"} link={"/about"} />
+            <DropDownItem className={styles.dropdownItem} img={null} text={"Login"} link={"/login"} />
+            <DropDownItem className={styles.dropdownItem} img={null} text={"Registrar"} link={"/register"} />
           </ul>
         </div>
       </div>

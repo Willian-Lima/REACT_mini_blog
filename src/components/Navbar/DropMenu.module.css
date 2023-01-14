@@ -17,13 +17,6 @@
     color: #EFEFEF;
   }
   
-  .drop_menu {
-    position: flex;
-    background-color: transparent;
-    border-radius: 15px;
-    padding: 10px 10px;
-  }
-  
   .drop_menu.active {
     opacity: 1;
     visibility: visible;
@@ -67,7 +60,7 @@
   }
 
   .drop_menu ul li a{
-    background-color: #fff;
+    background-color: transparent;
     color: rgb(0, 0, 0);
     cursor: pointer;
     text-decoration: none;
@@ -75,7 +68,7 @@
   }
   
   .drop_menu ul li a.active{
-    background-color: #fff;
+    background-color: transparent;
     color: red;
     cursor: pointer;
     text-decoration: none;
@@ -126,6 +119,7 @@
       border-radius: 15px;
       padding: 10px 10px;
       width: 200px;
+      z-index: 10;
     }
     
     .drop_menu::before {
@@ -182,12 +176,12 @@
     }
     
     .drop_menu ul li:hover a{
-      color: red;
+      color: black;
       cursor: pointer;
     }
   
     .drop_menu ul li a{
-      background-color: #fff;
+      background-color: transparent;
       color: rgb(0, 0, 0);
       cursor: pointer;
       text-decoration: none;
@@ -195,7 +189,7 @@
     }
     
     .drop_menu ul li a.active{
-      background-color: #fff;
+      background-color: transparent;
       color: red;
       cursor: pointer;
       text-decoration: none;
