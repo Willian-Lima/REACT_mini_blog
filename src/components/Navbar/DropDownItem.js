@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styles from './DropMenu.module.css';
 
-const DropDownItem = ({img, text, link}) => {
+const DropDownItem = ({/*img, */text, link}) => {
   return (
     <li>
       {/* <img src={img}/> */}

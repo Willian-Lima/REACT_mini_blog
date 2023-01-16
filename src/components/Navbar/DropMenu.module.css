@@ -65,6 +65,22 @@
     cursor: pointer;
     text-decoration: none;
     transition: 0.9s ease;
+    display: block;
+  }
+
+  .drop_menu ul button{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.9s ease;
+    padding: 10px;
+    border: 2px solid rgb(0, 0, 0, 0.05);
+    border-radius: 5px;
+  }
+
+  .drop_menu ul button:hover {
+    color: red;
+    cursor: pointer;
   }
   
   .drop_menu ul li a.active{
@@ -100,7 +116,7 @@
       background-color: transparent;
       font-size: 0.9rem;
       position: relative;
-      transition: .4s linear;
+      transition: 0.1s linear;
       display: block;
     }
   
@@ -137,16 +153,16 @@
       opacity: 1;
       visibility: visible;
       transform: translateY(0);
-      transition: 1s ease;
+      transition: .4s ease;
     }
     
     .drop_menu.inactive {
       opacity: 0;
       visibility: hidden;
       transform: translateY(-20px);
-      transition: 1s ease;
+      transition: .4s ease;
     }
-    
+    /*
     .drop_menu h3 {
       width: 100%;
       text-align: center;
@@ -160,7 +176,7 @@
       font-weight: 400;
       display: inline;
     }
-
+    */
     .drop_menu ul {
       display: block;
       list-style: none;
@@ -176,7 +192,28 @@
     }
     
     .drop_menu ul li:hover a{
-      color: black;
+      color: rgb(255, 0, 0);
+      cursor: pointer;
+    }
+
+    .drop_menu ul button{
+      background-color: transparent;
+      color: rgb(0, 0, 0);
+      transition: 0.9s ease;
+      padding: 10px 0;
+      border: 1px solid rgb(0, 0, 0, 0.05);
+      border-right: 0;
+      border-bottom: 0;
+      border-left: 0;
+      border-radius: 5px;
+      display: block;
+      width: 100%;
+      text-align: left;
+      font-size: 1rem;
+    }
+  
+    .drop_menu ul button:hover {
+      color: red;
       cursor: pointer;
     }
   
@@ -210,5 +247,32 @@
       margin-right: 10px;
       opacity: 0.5;
       transition: 1s;
+    }
+
+    .perfil {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .perfil a {
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.9s ease;
+
+    }
+
+    .perfil a:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .img {
+      margin-top: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: rgb(206, 206, 206);
+      border-radius: 50%;
     }
   }
