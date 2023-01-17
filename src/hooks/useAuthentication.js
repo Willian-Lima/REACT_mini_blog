@@ -69,9 +69,7 @@ export const useAuthentication = () => {
     const logout = () => {
 
         checkIfIsCancelled();
-
-        signOut(auth)
-
+        signOut(auth);
     }
 
     // Login - sign in

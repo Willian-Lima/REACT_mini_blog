@@ -41,6 +41,10 @@
     display: none;
   }
 
+  .perfil, img{
+    display: none;
+  }
+
   .drop_menu ul {
     display: flex;
     gap: 10px;
@@ -107,7 +111,7 @@
     transition: 1s;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 560px) {
     .menu_trigger button {
       padding: 10px;
       border: 2px solid rgb(30, 27, 27);

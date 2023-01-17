@@ -28,8 +28,6 @@ const DropMenu = () => {
       document.addEventListener("mousedown", handler);
     }
   });
-  
-  console.log(user)
 
   return (
     <Fragment>
@@ -60,7 +58,10 @@ const DropMenu = () => {
               <DropDownItem className={styles.dropdownItem} img={null} text={"Postar"} link={"/posts/create"} />
               <DropDownItem className={styles.dropdownItem} img={null} text={"Dashboard"} link={"/posts/dasboard"} />
 
-              <button onClick={logout}>Sair</button>
+              <button onClick={() => {
+                setOpen(false)
+                logout()
+              }}>Sair</button>
 
               
             </Fragment>
