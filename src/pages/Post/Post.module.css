@@ -1,0 +1,35 @@
+.post_detail {
+    margin-top: 1rem;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .post_detail img {
+    max-width: 600px;
+  }
+
+  .img {
+    width: 45vh;
+    height: 400px;
+    background-color: #444;
+  }
+  
+  .post_detail h2 {
+    margin-bottom: 0.4em;
+  }
+  
+  .post_detail .tags {
+    margin-bottom: 1.2em;
+    display: flex;
+  }
+  
+  .tags p {
+    margin-right: 0.5em;
+  }
+  
+  .tags span {
+    font-weight: bold;
+  }
