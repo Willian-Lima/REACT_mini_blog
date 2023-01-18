@@ -70,7 +70,7 @@ function CreatePost() {
       <p>Escreva sobre o que quiser e compartilhe o seu conhecimento!</p>
       <form onSubmit={handleSubmit}>
         <label>
-          <span>Título:</span>
+          <span className={styles.span}>Título:</span>
           <input
             type="text"
             name="text"
@@ -81,7 +81,7 @@ function CreatePost() {
           />
         </label>
         <label>
-          <span>URL da imagem:</span>
+          <span className={styles.span}>URL da imagem:</span>
           <input
             type="text"
             name="image"
@@ -92,7 +92,7 @@ function CreatePost() {
           />
         </label>
         <label>
-          <span>Conteúdo:</span>
+          <span className={styles.span}>Conteúdo:</span>
           <textarea
             name="body"
             required
@@ -102,7 +102,7 @@ function CreatePost() {
           ></textarea>
         </label>
         <label>
-          <span>Tags:</span>
+          <span className={styles.span}>Tags:</span>
           <input
             type="text"
             name="tags"

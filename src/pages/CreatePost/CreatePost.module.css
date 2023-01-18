@@ -27,7 +27,7 @@ form {
     border-radius: 1rem;
 }
 
-form label span {
+.span {
   padding-top: 13px;
   display: block;
 }
