@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 import { useAuthValue } from "../../context/AuthContext";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
-//import { useDeleteDocument } from "../../hooks/useDeleteDocument";
+import { useDeleteDocument } from "../../hooks/useDeleteDocument";
 
 const Dashboard = () => {
   const { user } = useAuthValue();
   const uid = user.uid;
 
-  const { documents: posts, loading, error } = useFetchDocuments("posts", null, uid);
+  const { documents: posts } = useFetchDocuments("posts", null, uid);
 
-  //const { deleteDocument } = useDeleteDocument("posts");
+  const { deleteDocument } = useDeleteDocument("posts");
 
   console.log(uid);
   console.log(posts);
@@ -47,7 +47,7 @@ const Dashboard = () => {
                 Editar
               </Link>
               <button
-                //onClick={() => deleteDocument(post.id)}
+                onClick={() => deleteDocument(post.id)}
                 className={styles.btn_del}
               >
                 Excluir

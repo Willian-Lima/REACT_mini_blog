@@ -39,9 +39,9 @@ const DropMenu = () => {
           {user && (
             <div className={styles.perfil}>
               <div className={styles.img}>
-                <img src={user.photoURL} />
+                <img className={styles.imagem_perfil} src={user.photoURL} alt={"User profile img"} />
               </div>
-              <Link to={"/profile"}>{user.displayName}</Link>
+              <Link to={"/posts/dasboard"}>{user.displayName}</Link>
             </div>
           )}
           <ul>

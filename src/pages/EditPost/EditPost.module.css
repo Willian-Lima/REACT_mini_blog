@@ -1,0 +1,53 @@
+.create_post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+  }
+  
+  .create_post h2 {
+    font-size: 2.2em;
+  }
+  
+  .create_post p {
+    color: #aaa;
+    margin: 2rem 0;
+  }
+
+.form {
+    width: 50%;
+    max-width: 350px;
+    min-width: 275px;
+    margin: 0px auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.span {
+  padding-top: 13px;
+  display: block;
+}
+
+form label input {
+  padding-top: 13px;
+  display: block;
+  width: 100%;
+}
+
+form label textarea {
+  padding-top: 13px;
+  display: block;
+  width: 100%;
+}
+
+form button {
+  margin: 2rem auto;
+}
+
+.img {
+  width: 100%;
+  height: 40vh;
+  background-color: #444;
+}
