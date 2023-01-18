@@ -57,3 +57,35 @@
     width: 100px;
     font-size: 0.7em;
   }
+
+  .btn {
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #000;
+    border: #000 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: transparent;
+    transition: .5s ease;
+  }
+
+  .btn:hover {
+    color: rgb(255, 0, 0);
+  }
+
+  .btn_del {
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #000;
+    border: #000 1px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(209, 94, 94);
+    cursor: pointer;
+    transition: .5s ease;
+  }
+
+  .btn_del:hover {
+    background-color: rgb(255, 0, 0);
+    color: #000;
+  }
